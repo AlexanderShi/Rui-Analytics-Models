@@ -6,7 +6,7 @@
 代码中为 `rui_api::VERSION`）。0.0.x 阶段每一组合并进 `main` 的改动把补丁号加 1，合并后在 `main` 上打标签 `vX.Y.Z`。
 `rui-api` 是求解器插件依赖的契约，它的不兼容改动在本文件里单独标出。
 
-## [0.0.0] — 未发布
+## [0.0.0] — 2026-11-19
 
 M0：契约、调度与参考求解器（设计见 `docs/design.md` §4）。
 
@@ -28,3 +28,5 @@ M0：契约、调度与参考求解器（设计见 `docs/design.md` §4）。
   Ubuntu / Windows / macOS 上跑 `cargo test --workspace --locked`，Ubuntu 上再跑 release 测试和 `quickstart` 示例。
 - 测试 70 个：设计文档 §4.4 调度表的每一行（用与将来 nlp / bo 插件相同能力声明的 mock）、选项规则、桥接、校验、会话、中断与时间上限、端到端求解；
   模型校验、分类、共享节点、`.nl` 求值对照手算与有限差分、`.nl` 模型经 `Registry` 调度。
+
+[0.0.0]: https://github.com/AlexanderShi/Rui-Analytics-Models/tree/v0.0.0
