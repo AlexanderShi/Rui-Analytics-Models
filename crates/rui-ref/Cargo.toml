@@ -1,0 +1,12 @@
+[package]
+name = "rui-ref"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+description = "Reference solvers for Rui Analytics Models (random search, projected gradient): test fixtures and templates for solver plugins, not production solvers"
+
+[dependencies]
+rui-api = { path = "../rui-api" }
+
+[dev-dependencies]
+rui-models = { path = "../rui-models" }

@@ -1,0 +1,9 @@
+[package]
+name = "rui-expr"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+description = "Algebraic models for Rui Analytics Models: expression graph, function classification, exact first and second derivatives"
+
+[dependencies]
+rui-api = { path = "../rui-api" }
