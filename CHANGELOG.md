@@ -24,5 +24,7 @@ M0：契约、调度与参考求解器（设计见 `docs/design.md` §4）。
   Jacobian 结构取线性变量与表达式变量之并、共享节点在一个元素内只编译一次。
 - **`rui-nl`**：ASCII `.nl` 读取器（迁自同一处的 `nl.rs`，接受的子集不变），输出 `rui_expr::Model`；错误类型 `NlError`（读文件 / 语法）。
   在 Mittelmann 的 47 个 `.nl` 文件上，与原代码的结构和全部求值结果逐位一致。
+- **CI**（GitHub Actions）：最新 stable 工具链；Ubuntu 上跑 `cargo fmt --check`、`clippy -D warnings`、`doc`（`RUSTDOCFLAGS=-D warnings`），
+  Ubuntu / Windows / macOS 上跑 `cargo test --workspace --locked`，Ubuntu 上再跑 release 测试和 `quickstart` 示例。
 - 测试 70 个：设计文档 §4.4 调度表的每一行（用与将来 nlp / bo 插件相同能力声明的 mock）、选项规则、桥接、校验、会话、中断与时间上限、端到端求解；
   模型校验、分类、共享节点、`.nl` 求值对照手算与有限差分、`.nl` 模型经 `Registry` 调度。

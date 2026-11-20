@@ -23,6 +23,8 @@ Python、Optuna、C API）让它们不必为 Rui 写专门的代码。设计见 
 ## 快速开始
 
 开发与测试使用 Rust 1.100.0（`x86_64-pc-windows-gnu`）；没有外部依赖，可以离线构建。
+CI（`.github/workflows/ci.yml`）在每个 PR 和 `main` 上用最新的 stable 工具链运行 `fmt`、`clippy`、`doc`（警告即错误），
+并在 Linux、Windows、macOS 上运行全部测试。
 
 ```bash
 cargo test --workspace
