@@ -1,0 +1,9 @@
+[package]
+name = "rui-models"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+description = "Dispatch layer of Rui Analytics Models: solver registry, automatic choice by problem signature, bridges between problem forms, option resolution, ask/tell sessions"
+
+[dependencies]
+rui-api = { path = "../rui-api" }

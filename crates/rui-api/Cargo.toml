@@ -1,0 +1,8 @@
+[package]
+name = "rui-api"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+description = "The contract between Rui Analytics Models and its solvers: problem oracles, signatures and capabilities, options, solutions, the Solver and AskTell traits"
+
+[dependencies]

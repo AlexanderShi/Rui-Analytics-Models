@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = ["crates/rui-api", "crates/rui-models", "crates/rui-ref", "crates/rui-expr", "crates/rui-nl"]
+
+[workspace.package]
+# One version for all crates; see CHANGELOG.md.
+version = "0.0.0"
+edition = "2021"
+# No license has been chosen yet (docs/design.md §9); nothing is published to crates.io until then.
+publish = false
+
+[profile.release]
+debug = 1          # keep symbols for profiling
+codegen-units = 4
